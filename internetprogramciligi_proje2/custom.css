@@ -1,0 +1,82 @@
+/* Genel Sayfa ve Türkçe Karakter Uyumlu Yazı Tipi Ayarları */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Patrick Hand', cursive, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Sıcak Bej ve Açık Bej Arka Plan Tonları */
+.hero-alan {
+  background-color: #F4EDE4;
+  border-bottom: 1px solid #e2d7c9;
+}
+
+.bej-zemin {
+  background-color: #FAF7F2;
+}
+
+/* Kategori Yuvarlak Görselleri */
+.kat-resim {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border: 3px solid #dc3545;
+}
+
+/* KUTU HOVER EFEKTİ: Yukarı Hareket ve El İmleci */
+.urun-karti,
+.kategori-kutu {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer; /* İmleci el şekline dönüştürür */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.urun-karti:hover,
+.kategori-kutu:hover {
+  transform: translateY(-10px); /* Kutuyu 10px yukarı hareket ettirir */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14);
+  border-color: #dc3545; /* Kırmızı çerçeve vurgusu */
+}
+
+.kategori-kutu {
+  background-color: #F4EDE4;
+}
+
+/* Ürün Kartı Görsel Orantısı */
+/* Ürün Kartı Görsel Orantısı */
+.urun-karti img {
+  height: 210px;
+  object-fit: contain; /* Resmi kesmeden kutunun içine tam sığdırır */
+  background-color: #ffffff; /* Paketin etrafını temiz beyaz yapar */
+  padding: 10px; /* Paketin kenarlara yapışmasını engeller */
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+}
+
+
+/* Kart Üzerine Gelince Butonun Kırmızıya Dönmesi */
+.urun-karti .btn-dark {
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.urun-karti:hover .btn-dark {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Accordion (SSS) Aktif Başlık Rengi */
+.accordion-button:not(.collapsed) {
+  background-color: #F4EDE4;
+  color: #dc3545;
+}
+
+/* Footer Link Geçişi */
+footer a:hover {
+  color: #dc3545 !important;
+}
